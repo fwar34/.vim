@@ -1,15 +1,6 @@
 vim9script
 
-if executable('pyls')
-    # pip install python-language-server
-    au User lsp_setup lsp#register_server({
-        \ 'name': 'pyls',
-        \ 'cmd': {server_info->['pyls']},
-        \ 'allowlist': ['python'],
-        \ })
-endif
-
-def On_lsp_buffer_enabled()
+def OnLspBufferEnabled()
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
     if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
@@ -31,7 +22,9 @@ def On_lsp_buffer_enabled()
     
     # refer to doc to add more commands
 enddef
+
+augroup lsp_install
     au!
     # call s:on_lsp_buffer_enabled only for languages that has the server registered.
-    autocmd User lsp_buffer_enabled On_lsp_buffer_enabled()
+    autocmd User lsp_buffer_enabled OnLspBufferEnabled()
 augroup END

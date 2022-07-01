@@ -34,12 +34,9 @@ Plug 'fwar34/vim-color-wombat256'
 
 # {{{
 Plug 'prabirshrestha/vim-lsp'
+# Refer to vim-lsp-settings on how to easily setup language servers using vim-lsp automatically.
 Plug 'mattn/vim-lsp-settings'
 # }}}
 
 # Initialize plugin system
 plug#end()
-
-# {{{
-colorscheme onedark
-# }}}
