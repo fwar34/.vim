@@ -38,5 +38,9 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 # }}}
 
+# {{{
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+# }}}
+
 # Initialize plugin system
 plug#end()
