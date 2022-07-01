@@ -1,8 +1,9 @@
 vim9script
+
 #--------------------------------------------------------------------------
 # 显示相关
 #--------------------------------------------------------------------------
-set shortmess=atcI   # 启动的时候不显示那个援助乌干达儿童的提示
+set shortmess=atI   # 启动的时候不显示那个援助乌干达儿童的提示
 set number              # 显示行号
 set go=             # 不要图形按钮
 
@@ -13,7 +14,7 @@ set novisualbell    # 不要闪烁(不明白)
 #set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\#%d/%m/%y\ -\ %H:%M\#)}   #状态行显示的内容
 set laststatus=2    # 启动显示状态行(1),总是显示状态行(2)
 
-set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+# set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set helplang=en
 
@@ -114,11 +115,6 @@ set sidescrolloff=5
 # 设置这个选项与 neovim-session-manager 冲突
 # set sessionoptions=blank,globals,localoptions,tabpages,folds,help,options,resize,winpos,winsize,unix,slash 
 set sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal
-set number
-# 允许折叠
-set foldenable
-# 手动折叠
-set foldmethod=manual
 # Tab键的宽度
 set tabstop=4
 # 统一缩进为4
@@ -160,6 +156,8 @@ set formatoptions+=m
 set formatoptions+=B
 # 允许代码折叠
 set foldenable
+# 手动折叠
+set foldmethod=manual
 # 代码折叠默认使用缩进
 set fdm=indent
 # 默认打开所有缩进

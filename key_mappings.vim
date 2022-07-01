@@ -1,5 +1,5 @@
 vim9script
 
-export def Init()
-	g:mapleader = ";"
-enddef
+g:mapleader = ";"
+noremap! ;g <C-c>
+vnoremap ;g <Esc>
