@@ -3,7 +3,9 @@ vim9script
 #--------------------------------------------------------------------------
 # 显示相关
 #--------------------------------------------------------------------------
-set shortmess=atI   # 启动的时候不显示那个援助乌干达儿童的提示
+# vim 自身命令行模式智能补全
+set nocompatible
+set shortmess=atcI   # 启动的时候不显示那个援助乌干达儿童的提示
 set number              # 显示行号
 set go=             # 不要图形按钮
 
@@ -22,8 +24,6 @@ if has('autocmd')
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-# vim 自身命令行模式智能补全
-set nocompatible
 
 #禁止vim换行后自动添加的注释符号
 augroup Format-Options
