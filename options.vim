@@ -184,3 +184,6 @@ set wildignore+=*.gba,*.sfc,*.078,*.nds,*.smd,*.smc
 set wildignore+=*.linux2,*.win32,*.darwin,*.freebsd,*.linux,*.android
 # 设置显示制表符等隐藏字符
 # set list
+
+# 字体设置
+set guifont=Sarasa\ Mono\ SC\ Nerd:h12
