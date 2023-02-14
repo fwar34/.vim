@@ -61,3 +61,4 @@ vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
 
 " call GuiWindowMaximized(1)
 
+set guifont=Sarasa\ Mono\ SC\ Nerd:h12
