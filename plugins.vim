@@ -1,8 +1,13 @@
 vim9script
 
+var plug_dir = '~/.vim/autoload/plug.vim'
+if has('win32)
+    plug_dir = '~/vimfiles/autoload/plug.vim'
+endif
+
 # Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if empty(glob(plug_dir))
+  silent '!curl -fLo ' .. plug_dir .. ' --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 endif
 
 # Run PlugInstall if there are missing plugins
