@@ -12,3 +12,9 @@ nnoremap <leader>bb <C-^>
 nnoremap <leader>ff <CMD>Leaderf file<CR>
 nnoremap <leader>bs <CMD>Leaderf buffer<CR>
 # }}}
+
+# {{{ 
+nnoremap s <CMD>call stargate#OKvim(2)<CR>
+# }}}
+
+nnoremap <leader>dj <CMD>Dir<CR>

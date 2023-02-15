@@ -187,3 +187,10 @@ set wildignore+=*.linux2,*.win32,*.darwin,*.freebsd,*.linux,*.android
 
 # 字体设置
 set guifont=Sarasa\ Mono\ SC\ Nerd:h12
+
+# python 设置
+# https://www.v2ex.com/t/410079
+# 通过pythondll和pythonthreedll来分别指定 Python2 和 Python3 所使用的动态库。 例如，可以在 vimrc 里添加 set pythondll=/Users/yggdroot/.python2.7.6/lib/libpython2.7.so
+# if has('win32')
+#     set pythonthreedll=C:\\Python310\\python310.dll
+# endif

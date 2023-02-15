@@ -34,21 +34,74 @@ Plug 'joshdick/onedark.vim'
 Plug 'fwar34/vim-color-wombat256'
 # }}}
 
-# {{{
+# {{{ lsp
 Plug 'prabirshrestha/vim-lsp'
 # Refer to vim-lsp-settings on how to easily setup language servers using vim-lsp automatically.
 Plug 'mattn/vim-lsp-settings'
 # }}}
 
 # {{{
-#if !has('win32')
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+#if has('win32')
+#    Plug 'Yggdroot/LeaderF'
+#else
+#    Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #endif
 # }}}
 
-# {{{
 Plug 'yianwillis/vimcdoc'
+
+# {{{ motion
+Plug 'monkoose/vim9-stargate'
 # }}}
+
+# {{{
+Plug 'bfrg/vim-qf-preview'
+augroup qfpreview
+    autocmd!
+    autocmd FileType qf nmap <buffer> p <plug>(qf-preview-open)
+    autocmd FileType qf nmap <buffer> q <CMD>close<CR>
+augroup END
+# }}}
+
+Plug 'Eliot00/auto-pairs'
+
+# {{{
+Plug 'Eliot00/git-lens.vim'
+# }}}
+
+# {{{
+Plug 'habamax/vim-dir'
+# augroup vimdir
+#     autocmd!
+#     autocmd FileType dir nmap <buffer> q <CMD>q<CR>
+# augroup END
+# }}}
+
+# {{{ 改变字体显示
+# echo artify#convert('Introduction', 'italic')
+Plug 'sainnhe/artify.vim'
+# }}}
+
+# {{{
+Plug 'kohnish/vim9-fuzzy'
+# }}}
+
+Plug 'Bakudankun/qline.vim'
+
+Plug 'hahdookin/minifuzzy.vim'
+
+# {{{
+Plug 'imranZERO/wintweak.gvim'
+# Popup menu
+nnoremap <F10> <Cmd>Wintweak<cr>
+# Toggle fullscreen
+nnoremap <m-cr> <Cmd>WTFullScreen<cr>
+# RGB Color Picker (normal & insert mode)
+nnoremap <m-c> <Cmd>WTCpicker<cr>
+inoremap <m-c> <Cmd>WTCpicker<cr>
+# and any other wintweak functions.
+# }}}
+
 
 # Initialize plugin system
 plug#end()
