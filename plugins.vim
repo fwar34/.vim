@@ -83,7 +83,9 @@ Plug 'sainnhe/artify.vim'
 # }}}
 
 # {{{
-Plug 'kohnish/vim9-fuzzy'
+if !has('win32')
+    Plug 'kohnish/vim9-fuzzy'
+endif
 # }}}
 
 Plug 'Bakudankun/qline.vim'
@@ -106,6 +108,10 @@ Plug 'Bakudankun/popupe.vim'
 
 # {{{
 Plug 'yegappan/fileselect'
+# }}}
+
+# {{{
+Plug 'liuchengxu/vista.vim'
 # }}}
 
 # Initialize plugin system
