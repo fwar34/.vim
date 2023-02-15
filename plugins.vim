@@ -4,7 +4,7 @@ var plug_dir = '~/.vim/autoload/plug.vim'
 var cmd = '!curl -fLo ' .. plug_dir .. ' --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 if has('win32')
     plug_dir = '~\vimfiles\autoload\plug.vim'
-	cmd = '!curl.exe -fLo ' .. expand(plug_dir) .. ' --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    cmd = '!curl.exe -fLo ' .. expand(plug_dir) .. ' --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 endif
 
 if empty(glob(plug_dir))
@@ -41,9 +41,13 @@ Plug 'mattn/vim-lsp-settings'
 # }}}
 
 # {{{
-if !has('win32')
-	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-endif
+#if !has('win32')
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+#endif
+# }}}
+
+# {{{
+Plug 'yianwillis/vimcdoc'
 # }}}
 
 # Initialize plugin system
