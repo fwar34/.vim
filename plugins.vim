@@ -104,5 +104,9 @@ inoremap <m-c> <Cmd>WTCpicker<cr>
 
 Plug 'Bakudankun/popupe.vim'
 
+# {{{
+Plug 'yegappan/fileselect'
+# }}}
+
 # Initialize plugin system
 plug#end()
