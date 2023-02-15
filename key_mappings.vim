@@ -7,6 +7,18 @@ vnoremap ;g <Esc>
 # {{{ misc
 nnoremap <leader>bb <C-^>
 nnoremap <leader>xx <CMD>nohl<CR>
+nnoremap <leader>a ^
+nnoremap <leader>e $
+nnoremap <leader>mm %
+# }}}
+
+# {{{
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-a> <Esc>I
+inoremap <C-e> <End>
+inoremap <leader>o <Esc>o
+inoremap <leader>O <Esc>O
 # }}}
 
 # {{{ LeaderF
