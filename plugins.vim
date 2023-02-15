@@ -102,6 +102,7 @@ inoremap <m-c> <Cmd>WTCpicker<cr>
 # and any other wintweak functions.
 # }}}
 
+Plug 'Bakudankun/popupe.vim'
 
 # Initialize plugin system
 plug#end()
