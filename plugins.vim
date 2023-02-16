@@ -90,7 +90,8 @@ endif
 
 Plug 'Bakudankun/qline.vim'
 
-Plug 'hahdookin/minifuzzy.vim'
+# Plug 'hahdookin/minifuzzy.vim'
+Plug 'fwar34/minifuzzy.vim'
 
 # {{{
 Plug 'imranZERO/wintweak.gvim'
